@@ -20,6 +20,8 @@ def thread_time(target, threadName):
            print(f"Execution time of {threadName}: {et - st}")
            print(f"Finish {threadName} RAM useage {psutil.virtual_memory().percent}")
            threading.currentThread().duration = et - st
+           print(f"Start time of {threadName}: {st}")
+           print(f"End time of {threadName}: {et}")
    return wrapper
 
 if __name__ =="__main__":
